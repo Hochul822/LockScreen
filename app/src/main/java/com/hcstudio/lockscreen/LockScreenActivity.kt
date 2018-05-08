@@ -1,17 +1,18 @@
 package com.hcstudio.lockscreen
 
+import android.app.WallpaperManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import kotlinx.android.synthetic.main.activity_lock_screen.*
 
 class LockScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lock_screen)
-        supportActionBar?.hide()
-
+        setLayout()
     }
 
     override fun onAttachedToWindow() {
@@ -26,5 +27,11 @@ class LockScreenActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         super.onAttachedToWindow()
+    }
+
+    fun setLayout() {
+        val wallPaper = WallpaperManager.getInstance(this)
+        val drawable = wallPaper.drawable
+        lock_layout.background = drawable
     }
 }
