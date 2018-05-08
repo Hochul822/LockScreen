@@ -5,7 +5,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hcstudio.lockscreen.MainActivity">
+    tools:context="com.hcstudio.lockscreen.view.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,8 +38,8 @@
         android:id="@+id/off"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="64dp"
         android:text="Off"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

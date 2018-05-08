@@ -1,4 +1,4 @@
-package com.hcstudio.lockscreen
+package com.hcstudio.lockscreen.presenter
 
 import android.view.View
 

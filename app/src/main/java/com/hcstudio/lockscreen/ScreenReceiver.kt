@@ -3,6 +3,7 @@ package com.hcstudio.lockscreen
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import com.hcstudio.lockscreen.view.LockScreenActivity
 
 class ScreenReceiver : BroadcastReceiver() {
 

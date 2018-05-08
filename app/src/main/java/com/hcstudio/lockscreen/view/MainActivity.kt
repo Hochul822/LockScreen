@@ -1,9 +1,11 @@
-package com.hcstudio.lockscreen
+package com.hcstudio.lockscreen.view
 
 import android.app.WallpaperManager
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.hcstudio.lockscreen.R
+import com.hcstudio.lockscreen.ScreenService
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

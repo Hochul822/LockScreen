@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name=".view.MainActivity"
             android:theme="@style/Theme.AppCompat.Translucent"
             android:excludeFromRecents="true">
             <intent-filter>
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LockScreenActivity"
+        <activity android:name=".view.LockScreenActivity"
             android:showOnLockScreen="true"
             android:theme="@style/Theme.AppCompat.Translucent"
             android:launchMode="singleTop"/>
