@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LockScreen</string>
+    <string name="tip_of_day">오늘의 커리어 팁</string>
+    <string name="tip_of_day_content">일이 손에 잡히지 않을 때 어떻게 할까요?</string>
 </resources>
