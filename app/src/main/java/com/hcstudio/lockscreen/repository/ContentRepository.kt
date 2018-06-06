@@ -1,5 +1,8 @@
 package com.hcstudio.lockscreen.repository
 
-class ContentRepository {
+import android.app.Application
+import com.hcstudio.lockscreen.dao.ContentDao
+
+class ContentRepository(application: Application) {
 
 }

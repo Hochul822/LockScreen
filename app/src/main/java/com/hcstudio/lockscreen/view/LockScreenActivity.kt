@@ -6,9 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
 import com.hcstudio.lockscreen.R
+import com.hcstudio.lockscreen.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_lock_screen.*
 
-class LockScreenActivity : AppCompatActivity() {
+class LockScreenActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -8,11 +8,12 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.hcstudio.lockscreen.R
 import com.hcstudio.lockscreen.ScreenService
+import com.hcstudio.lockscreen.base.BaseActivity
 import com.hcstudio.lockscreen.model.Content
 import com.hcstudio.lockscreen.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
