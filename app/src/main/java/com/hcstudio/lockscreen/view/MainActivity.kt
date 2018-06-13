@@ -42,9 +42,18 @@ class MainActivity : BaseActivity() {
             }
         })
 
-        val content = Content()
-        content.title = "오늘의 안드로이드 개발팁"
-        content.content = "8.0부터는 백그라운드 서비스 제한이 걸리는 걸 알고 계셨나요?"
+        model.getAllContents().observe(this, Observer<List<Content>> {
+            contents ->
+                contents?.forEach {
+                    content_title.text = it.title
+                    content_tip.text = it.content
+                }
+        })
+
+
+        val content = Content(0, "오늘의 안드로이드 개발팁", "8.0부터는 백그라운드 서비스 제한이 걸리는 걸 알고 계셨나요?", 2000, "kr")
+        //content.title = "오늘의 안드로이드 개발팁"
+        //content.content = "8.0부터는 백그라운드 서비스 제한이 걸리는 걸 알고 계셨나요?"
         model.setContent(content)
     }
 
@@ -53,4 +62,6 @@ class MainActivity : BaseActivity() {
         val drawable = wallPaper.drawable
         main_layout.background = drawable
     }
+
+
 }
