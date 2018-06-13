@@ -12,6 +12,9 @@ interface ContentDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertContent(context: Content)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertContentList(list: List<Content>)
+
     @Query("SELECT * from content_table ORDER BY date DESC")
     fun getAllContent(): LiveData<List<Content>>
 
